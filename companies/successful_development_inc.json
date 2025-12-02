@@ -14,7 +14,7 @@
           "name": "Adobe, Inc.",
           "highlights": [
             "Participated in the development of Adobe Creative Cloud, Adobe Marketing Cloud, and Adobe Document Cloud services, which runs on **Amazon AWS**.",
-            "Designed, prototyped, and implemented key platform components, such as live data **encryption** system, **backup and restore** system for clustered environments, sophisticated space management system, and multiregional data migration system.",
+            "Designed, prototyped, and implemented key platform components, such as live data **encryption** system, **backup and restore** system for clustered environments, sophisticated space management system, and multiregional data migration system, supporting hundreds of thousands of active users and petabytes of data.",
             "Employed tools and technologies such as **chef**, **bash**, tcsh, **mysql**, perl, ruby, java, lvm, dm-crypt, **AWS**, and **RHEL**."
           ]
         },
@@ -29,7 +29,7 @@
         {
           "name": "SilverTreeSystems, Inc.",
           "highlights": [
-            "Designed infrastructure and provided integration between different software APIs and PaaS platforms, such as Salesforce and Heroku.",
+            "Designed infrastructure and provided integration between multiple different software APIs and PaaS platforms, such as Salesforce and Heroku.",
             "Developed B2B services, including a cloud-based virtual call center for SoVox company (10k+ employees worldwide), a subscription management system called Avalon (used by IBM, Dell, and Google), and a data analysis and report generation system."
           ]
         }

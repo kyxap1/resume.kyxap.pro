@@ -10,7 +10,7 @@
       "address": "Boston, MA - Krasnodar, Russia",
       "summary": "Fasten was one of the world's largest taxi services, renowned for its brands \"RuTaxi\", \"Vezyot\", \"Saturn\", \"RedTaxi,\" and \"Leader\". As a Lead DevOps Engineer, my primary focus was on standardizing various project components to ensure that test environments were relevant to the business workflow. Under my leadership, the following DevOps initiatives were implemented:",
       "highlights": [
-        "Managed a team of 5 DevOps engineers, ensuring that all projects were delivered on time and within budget.",
+        "Managed a team of **5** DevOps engineers, delivering all projects on time and within budget.",
         "Designed and executed **CI/CD pipelines** for over 80 microservices in **AWS**, and migrated these services to **Kubernetes**.",
         "Transitioned infrastructure to **Infrastructure-as-Code (IaC)** using **Terraform** and **AWS CloudFormation**.",
         "Established traceable environments coupled with a reporting system for enhanced **monitoring** in **AWS**.",

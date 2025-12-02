@@ -19,7 +19,7 @@
             color: #000;
             max-width: 8.5in;
             margin: 0 auto;
-            padding: 40px;
+            padding: 0;
         }
 
         p,
@@ -43,7 +43,7 @@
         .header-photo {
             float: left;
             margin-right: 25px;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
         }
 
         .header-photo img {
@@ -89,9 +89,9 @@
         h2.section-title {
             font-size: 14pt;
             font-weight: bold;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             border-bottom: none;
-            margin-top: 25px;
+            margin-top: 15px;
             text-transform: uppercase;
         }
 
@@ -287,7 +287,7 @@
     <div class="job-entry">
         <div class="job-header">
             <span class="work-position-header">{{ job.position }}</span>
-            <span class="job-date">{{ job.startDate | format_date }} – {{ job.endDate | format_date if job.endDate else
+            <span class="job-date">{{ job.startDate | format_date }} to {{ job.endDate | format_date if job.endDate else
                 'present' }}</span>
         </div>
         <div class="work-company-sub">{{ job.company }}</div>
