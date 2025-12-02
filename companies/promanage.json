@@ -1,0 +1,16 @@
+{
+  "company": "ProManage",
+  "hidden": true,
+  "website": "pro-manage.net",
+  "startDate": "2008-01-01",
+  "endDate": "2022-06-01",
+  "descriptions": {
+    "devops": {
+      "position": "FOUNDER",
+      "business": "IT Consulting",
+      "address": "Ukraine",
+      "summary": "Remote System Admininstration Services",
+      "highlights": []
+    }
+  }
+}

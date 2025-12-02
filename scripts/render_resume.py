@@ -1,0 +1,88 @@
+import argparse
+import json
+import os
+import sys
+import urllib.request
+from jinja2 import Environment, FileSystemLoader, select_autoescape
+from markupsafe import Markup
+import re
+
+def load_json(path_or_url):
+    """Load JSON from a local file or URL."""
+    if path_or_url.startswith('http://') or path_or_url.startswith('https://'):
+        with urllib.request.urlopen(path_or_url) as response:
+            return json.loads(response.read().decode('utf-8'))
+    else:
+        with open(path_or_url, 'r') as f:
+            return json.load(f)
+
+def render_resume(json_path, output_path, template_dir='templates', template_name='resume.html'):
+    """Render the resume HTML."""
+    # Load data
+    try:
+        data = load_json(json_path)
+    except Exception as e:
+        print(f"Error loading JSON: {e}", file=sys.stderr)
+        sys.exit(1)
+
+    # Setup Jinja2 environment
+    env = Environment(
+        loader=FileSystemLoader(template_dir),
+        autoescape=select_autoescape(['html', 'xml'])
+    )
+
+    def format_date(value):
+        if not value:
+            return value
+        try:
+            from datetime import datetime
+            date_obj = datetime.strptime(value, '%Y-%m-%d')
+            return date_obj.strftime('%B %Y')
+        except ValueError:
+            return value
+
+    env.filters['format_date'] = format_date
+
+    def markdown_bold(value):
+        """Convert **text** to <b>text</b>."""
+        if isinstance(value, str):
+            # Replace **text** with <b>text</b>
+            bolded = re.sub(r'\*\*(.*?)\*\*', r'<b>\1</b>', value)
+            return Markup(bolded)
+        return value
+
+    env.filters['markdown_bold'] = markdown_bold
+
+    try:
+        template = env.get_template(template_name)
+    except Exception as e:
+        print(f"Error loading template: {e}", file=sys.stderr)
+        sys.exit(1)
+
+    # Render
+    try:
+        html_output = template.render(**data)
+    except Exception as e:
+        print(f"Error rendering template: {e}", file=sys.stderr)
+        sys.exit(1)
+
+    # Write output
+    if output_path:
+        with open(output_path, 'w') as f:
+            f.write(html_output)
+        print(f"Resume rendered to {output_path}")
+    else:
+        print(html_output)
+
+def main():
+    parser = argparse.ArgumentParser(description='Render resume HTML from JSON.')
+    parser.add_argument('json_file', help='Path or URL to the resume JSON file')
+    parser.add_argument('-o', '--output', help='Output HTML file path', default='resume.html')
+    parser.add_argument('--template-dir', help='Directory containing templates', default='templates')
+
+    args = parser.parse_args()
+
+    render_resume(args.json_file, args.output, args.template_dir)
+
+if __name__ == '__main__':
+    main()

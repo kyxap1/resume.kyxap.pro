@@ -1,0 +1,16 @@
+{
+  "company": "Sinet Networks",
+  "hidden": true,
+  "website": "",
+  "startDate": "2002-12-01",
+  "endDate": "2010-10-31",
+  "descriptions": {
+    "devops": {
+      "position": "UNIX ADMINISTRATOR",
+      "business": "Network Provider",
+      "address": "Ukraine",
+      "summary": "Designing, planning and implementing network infrastructure.",
+      "highlights": []
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "company": "Joyent",
+  "hidden": true,
+  "website": "https://joyent.com",
+  "startDate": "2013-05-01",
+  "endDate": "2014-04-31",
+  "descriptions": {
+    "devops": {
+      "position": "DevOps Engineer",
+      "summary": "I participated in development of Joyent SmartDataCenter platform. Our team was mostly involved in frontend, but I took part in development of following:",
+      "highlights": [
+        "**Docker** support integration.",
+        "**Windows images** build system.",
+        "**Linux images** build system.",
+        "Instruments: [ **pxe**, **sh**, **bash**, **nodejs**, **mongodb**, **docker**, **windows aik**, **linux**, **smartos**, **solaris** ]."
+      ]
+    }
+  }
+}

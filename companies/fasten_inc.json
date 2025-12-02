@@ -1,0 +1,23 @@
+{
+  "company": "Fasten, Inc.",
+  "website": "fasten.com",
+  "startDate": "2016-01-18",
+  "endDate": "2021-05-14",
+  "descriptions": {
+    "devops": {
+      "position": "LEAD DEVOPS ENGINEER - AWS",
+      "business": "Online Taxi SaaS Platform, Taxi App",
+      "address": "Boston, MA - Krasnodar, Russia",
+      "summary": "Fasten was one of the world's largest taxi services, renowned for its brands \"RuTaxi\", \"Vezyot\", \"Saturn\", \"RedTaxi,\" and \"Leader\". As a Lead DevOps Engineer, my primary focus was on standardizing various project components to ensure that test environments were relevant to the business workflow. Under my leadership, the following DevOps initiatives were implemented:",
+      "highlights": [
+        "Managed a team of 5 DevOps engineers, ensuring that all projects were delivered on time and within budget.",
+        "Designed and executed **CI/CD pipelines** for over 80 microservices in **AWS**, and migrated these services to **Kubernetes**.",
+        "Transitioned infrastructure to **Infrastructure-as-Code (IaC)** using **Terraform** and **AWS CloudFormation**.",
+        "Established traceable environments coupled with a reporting system for enhanced **monitoring** in **AWS**.",
+        "Fostered knowledge sharing among the development team (50 developers), promoting **AWS best practices**.",
+        "Introduced code review processes and **automated code quality analysis** using **AWS CodeStar** and other tools.",
+        "Additionally, I contributed to the **architectural design** of a new ride-sharing platform intended to replace the existing one, leveraging **AWS services** for scalability and performance."
+      ]
+    }
+  }
+}

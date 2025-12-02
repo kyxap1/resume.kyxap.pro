@@ -1,0 +1,58 @@
+{
+  "skills": [
+    {
+      "name": "Linux Distros",
+      "level": "Master",
+      "keywords": [
+        "Amazon Linux 2",
+        "Amazon Linux 2023",
+        "Debian",
+        "Ubuntu"
+      ]
+    },
+    {
+      "name": "Programming Languages",
+      "level": "Master",
+      "keywords": [
+        "python",
+        "golang"
+      ]
+    },
+    {
+      "name": "Scripting",
+      "level": "Master",
+      "keywords": [
+        "bash",
+        "powershell"
+      ]
+    },
+    {
+      "name": "Editors",
+      "level": "Master",
+      "keywords": [
+        "neovim",
+        "vscode",
+        "jq",
+        "sed",
+        "awk"
+      ]
+    },
+    {
+      "name": "Version Control",
+      "level": "Master",
+      "keywords": [
+        "git"
+      ]
+    },
+    {
+      "name": "Software Development",
+      "level": "Master",
+      "keywords": [
+        "kanban",
+        "github",
+        "cursor",
+        "antigravity"
+      ]
+    }
+  ]
+}

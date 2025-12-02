@@ -1,0 +1,35 @@
+{
+  "company": "Self-employed",
+  "website": "kyxap.pro",
+  "startDate": "2021-05-16",
+  "endDate": "2022-06-01",
+  "descriptions": {
+    "devops": {
+      "position": "DEVOPS CONSULTANT",
+      "business": "IT Consulting, Custom Software Development",
+      "address": "Ukraine",
+      "summary": "As a DevOps Consultant, I architected and implemented scalable cloud solutions, focusing on infrastructure modernization and operational efficiency. My key accomplishments include:",
+      "highlights": [
+        "Architected **AWS infrastructure** for a suite of Node.js services running on **auto-scaling ECS cluster** with **high availability** and monitoring, utilizing **RDS PostgreSQL**.",
+        "Migrated EC2 access from SSH keys to **AWS Systems Manager Session Manager**, implementing authentication via **AWS Directory Service** and **ADFS**.",
+        "Implemented annual **AWS KMS automatic key rotation** for data encryption, using **AWS Lambda** to update services credentials.",
+        "Developed a CLI tool (**bash/go**) for simultaneous access to isolated services like DB or Kibana across multiple environments using **AWS SSO** and **Session Manager**, **eliminating the need for VPNs**, uncompliant firewall rules or transit gateways."
+      ]
+    },
+    "devsecops": {
+      "position": "DEVSECOPS CONSULTANT",
+      "business": "IT Consulting, Custom Software Development",
+      "address": "Ukraine",
+      "summary": "As a DevSecOps Consultant, I focused on implementing robust security controls, compliance standards, and automated vulnerability management. My key accomplishments include:",
+      "highlights": [
+        "Enforced **FIPS-140 cryptographic standard** across all applications, containers, and AMIs.",
+        "Containerized **Wazuh 3.x** and automated the deployment and configuration of the Wazuh server and agents (**Linux/Windows**) with **PEM-based authentication**.",
+        "Implemented an **automated virus scanning system** for S3 uploads using **AWS Lambda** and **ClamAV**.",
+        "Tailored custom **SELinux policies** for applications and **Docker** containers, configured SELinux for **ECS/EKS**, and created **hardened AMIs**.",
+        "Configured **automated SBOM manifest generation** across clients GitHub repositories.",
+        "Built an **automated system for upgrading and patching vulnerabilities** in service containers shipped with **Helm charts**.",
+        "Assisted companies in preparing for **FedRAMP audits**."
+      ]
+    }
+  }
+}

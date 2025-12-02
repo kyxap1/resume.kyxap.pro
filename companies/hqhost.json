@@ -1,0 +1,25 @@
+{
+  "company": "HQHost",
+  "website": "hqhost.net",
+  "startDate": "2005-04-01",
+  "endDate": "2012-01-05",
+  "descriptions": {
+    "devops": {
+      "position": "SENIOR SYSTEM ADMINISTRATOR",
+      "business": "Hosting Provider",
+      "address": "Ukraine",
+      "summary": "As a part of a team ensuring 24/7/365 service availability, I provided third-tier support to a LAMP stack shared hosting platform with over 500 physical nodes. My key responsibilities included:",
+      "highlights": [
+        "Designing, planning, installing, configuring, administering, and tuning applications, database, and web servers across hundreds of nodes.",
+        "Developing **monitoring** and **alerting systems** to proactively manage **infrastructure health** and stability, maintaining **99.9% uptime**.",
+        "Creating a management and deployment system for 30+ KVM/Xen hypervisors, along with an internal control panel.",
+        "Developing the dedicated server management panel,dedikit.net, to enhance user experience and functionality.",
+        "Participating in 3 major migrations between data centers and implementing solutions to mitigate **DDoS attacks** and **security breaches**.",
+        "Collaborating closely with upstream providers and data center staff through tickets and abuse boards, keeping abuse processing time at a **consistently low level**.",
+        "Remotely configuring active **L2/L3 network equipment**, including **Cisco** 29xx/35xx switches and routers.",
+        "Assisting thousands of customers through email, ICQ, Jabber, and control panel ticketing systems, providing support and guidance.",
+        "**Mentored junior administrators**, managing their onboarding process and conducting technical training sessions."
+      ]
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "company": "DirtyFlix",
+  "hidden": true,
+  "website": null,
+  "startDate": "2009-06-01",
+  "endDate": "2016-03-31",
+  "descriptions": {
+    "devops": {
+      "position": "Infrastructure Architect",
+      "summary": "Adult videostreaming network.",
+      "highlights": [
+        "**Storage system**.",
+        "**Transcode system**.",
+        "**Http-streaming**.",
+        "**Content delivery network**.",
+        "Instruments: **perl**, **bash**, **ffmpeg**, **gstreamer**, **mysql**, **nginx**."
+      ]
+    }
+  }
+}

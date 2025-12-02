@@ -1,0 +1,39 @@
+{
+  "company": "Successful Development, Inc.",
+  "website": "sfdev.com",
+  "startDate": "2012-05-01",
+  "endDate": "2016-01-15",
+  "descriptions": {
+    "devops": {
+      "position": "LEAD SYSTEM ADMINISTRATOR",
+      "business": "Custom Software Development, IT Consulting",
+      "address": "Ukraine",
+      "summary": "As a contractor at Successful Development, Inc. (Sfdev), I worked with multiple high-profile clients including SilverTreeSystems, Inc., Joyent, and Adobe, Inc. My main responsibilities involved designing infrastructure, integrating software APIs, and working with various PaaS platforms. Here are some key projects and contributions for each client:",
+      "projects": [
+        {
+          "name": "Adobe, Inc.",
+          "highlights": [
+            "Participated in the development of Adobe Creative Cloud, Adobe Marketing Cloud, and Adobe Document Cloud services, which runs on **Amazon AWS**.",
+            "Designed, prototyped, and implemented key platform components, such as live data **encryption** system, **backup and restore** system for clustered environments, sophisticated space management system, and multiregional data migration system.",
+            "Employed tools and technologies such as **chef**, **bash**, tcsh, **mysql**, perl, ruby, java, lvm, dm-crypt, **AWS**, and **RHEL**."
+          ]
+        },
+        {
+          "name": "Joyent",
+          "highlights": [
+            "Participated in the development of Joyent SmartDataCenter platform.",
+            "Developed **Docker** support integration, **Windows** images build system, and **Linux** images build system.",
+            "Utilized technologies such as pxe, windows aik, nodejs, mongodb, **docker**, **linux**, smartos and solaris."
+          ]
+        },
+        {
+          "name": "SilverTreeSystems, Inc.",
+          "highlights": [
+            "Designed infrastructure and provided integration between different software APIs and PaaS platforms, such as Salesforce and Heroku.",
+            "Developed B2B services, including a cloud-based virtual call center for SoVox company (10k+ employees worldwide), a subscription management system called Avalon (used by IBM, Dell, and Google), and a data analysis and report generation system."
+          ]
+        }
+      ]
+    }
+  }
+}

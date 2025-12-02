@@ -1,0 +1,77 @@
+{
+  "basics": {
+    "name": "Oleksandr Kukhar",
+    "label": "Senior DevSecOps Engineer",
+    "picture": "https://2.gravatar.com/avatar/2ae782aa1abfb810ef100f52d7b56debfa5c26ea560aeb2af1ca47bf541c6fcb",
+    "hide_picture": true,
+    "email": "kyxap@kyxap.pro",
+    "phone": "",
+    "website": "https://kyxap.pro",
+    "summary": "I’m seeking a challenging position in a professional organization which will help me enrich technical skills and take up greater responsibilities that will enable me to use my skills and abilities to make contributions to the company as well as to collaborate with teammates for achieving our common goals.",
+    "location": {
+      "address": "",
+      "postalCode": "PA",
+      "city": "Doylestown",
+      "countryCode": "US",
+      "region": "Pennsylvania"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "hide_name": true,
+        "username": "kyxap1",
+        "url": "https://github.com/kyxap1"
+      }
+    ]
+  },
+  "work": [],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "Evaluated by Morningside Evaluations, Kelly J. Fadel, 2023",
+      "area": "Computer Information Systems",
+      "studyType": "Bachelor of Science",
+      "gpa": "",
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "publications": [],
+  "certificates": [
+    {
+      "name": "ISC2 Certified in Cybersecurity (CC)",
+      "date": "2023",
+      "issuer": "ISC2",
+      "url": "https://www.credly.com/badges/0a467676-51c2-4740-868c-ba30e3ad9ec2"
+    },
+    {
+      "name": "AWS Certified Cloud Practitioner",
+      "date": "2024",
+      "issuer": "Amazon Web Services Training and Certification",
+      "url": "https://www.credly.com/badges/eae12888-c795-4af9-a2a7-85c08b12edb0"
+    },
+    {
+      "name": "AWS Certified Security – Specialty",
+      "date": "2024",
+      "issuer": "Amazon Web Services Training and Certification",
+      "url": "https://www.credly.com/badges/0f3ef265-ef50-46bd-9506-c926589eb284"
+    }
+  ],
+  "skills": [],
+  "languages": [
+    {
+      "language": "Russian",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "Ukrainian",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Upper Intermediate"
+    }
+  ],
+  "interests": [],
+  "references": []
+}

@@ -1,0 +1,100 @@
+{
+    "skills": [
+        {
+            "name": "Load Balancers",
+            "level": "Master",
+            "keywords": [
+                "nginx",
+                "haproxy",
+                "traefik"
+            ]
+        },
+        {
+            "name": "Databases",
+            "level": "Master",
+            "keywords": [
+                "mysql",
+                "pgsql",
+                "cassandra",
+                "elasticsearch"
+            ]
+        },
+        {
+            "name": "Message Brokers",
+            "level": "Master",
+            "keywords": [
+                "Kafka",
+                "RabbitMQ"
+            ]
+        },
+        {
+            "name": "Java",
+            "level": "Master",
+            "keywords": [
+                "j2ee",
+                "maven",
+                "wildfly"
+            ]
+        },
+        {
+            "name": "Application Monitoring",
+            "level": "Master",
+            "keywords": [
+                "prometheus"
+            ]
+        },
+        {
+            "name": "Virtualization",
+            "level": "Master",
+            "keywords": [
+                "xen",
+                "kvm",
+                "libvirt"
+            ]
+        },
+        {
+            "name": "Monitoring",
+            "level": "Master",
+            "keywords": [
+                "kibana",
+                "grafana",
+                "zabbix",
+                "nagios",
+                "munin",
+                "monit"
+            ]
+        },
+        {
+            "name": "Web Servers",
+            "level": "Master",
+            "keywords": [
+                "nginx",
+                "apache"
+            ]
+        },
+        {
+            "name": "Protocols",
+            "level": "Master",
+            "keywords": [
+                "dns",
+                "http",
+                "smtp",
+                "ssh",
+                "ldap",
+                "snmp",
+                "xmpp"
+            ]
+        },
+        {
+            "name": "Storage",
+            "level": "Master",
+            "keywords": [
+                "lvm",
+                "iscsi",
+                "drbd",
+                "zfs",
+                "hw controllers"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+  "company": "Opticom Networks",
+  "hidden": true,
+  "website": "",
+  "startDate": "2004-01-05",
+  "endDate": "2010-02-01",
+  "descriptions": {
+    "devops": {
+      "position": "SENIOR UNIX ADMINISTRATOR",
+      "business": "Network Provider",
+      "address": "Ukraine",
+      "summary": "Designing, planning and implementing network infrastructure.",
+      "highlights": [
+        "**Fiber networks** hardware.",
+        "Configuration of **L2/L3 devices** **Cisco**/Telco/Dell/Nortel/3Com.",
+        "Public services administration: **ftp**, **lamp**, **proxy**."
+      ]
+    }
+  }
+}
