@@ -20,21 +20,20 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: 3.12
-          pip-install: requirements.txt
-          cache: pip
+          pip-install: -r requirements.txt
       - name: Install WeasyPrint dependencies
         run: |
-          #apt-get update
-          apt-get install -y pango1.0-tools
+          sudo apt-get update
+          sudo apt-get install -y pango1.0-tools
       - name: Build Resume
         run: make devsecops
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: "./html"
   deploy:
