@@ -14,7 +14,7 @@
         "Implementing **hardening** of **container images** and DoD-approved security configuration on **helm charts**, as well as **vulnerability patching** pipelines for Federal environment, achieving **100% compliance** with DoD standards and **reducing critical vulnerabilities to zero** on an automated basis.",
         "Developing secure **EC2 image builder** pipelines from scratch with **CIS-benchmarked** and **STIG'd** \"golden\" **AMIs** and base **container images**, ensuring full **compliance** with **security scanners**.",
         "Configuring and managing **AWS GuardDuty** and **SecurityHub** to monitor and detect threats across all available services and regions, achieving **100% score** for **CIS** and **NIST-800-53** conformance packs.",
-        "Setting up and configuring a centralized logging system based on multiple AWS Elasticsearch clusters for efficient audit log management and analysis.",
+        "Setting up and configuring a centralized logging system based on multiple AWS **Elasticsearch** clusters for efficient audit log management and analysis.",
         "Implementing **Wazuh** and **Nessus Pro** for runtime **vulnerability scanning** of dynamic auto-scaling environments (**EKS/ECS**), ensuring proactive identification and mitigation of potential risks.",
         "Establishing **static code analysis** in GitHub and **dependency scanning** with **GitHub Dependabot** for continuous **security assessment** of code and dependencies across nearly 200 repositories.",
         "Orchestrating weekly continuous **penetration testing** using **GitHub Actions** to validate the resilience of the infrastructure and applications against cyber attacks.",

@@ -1,31 +1,38 @@
 .PHONY: all clean devops devsecops
 
+# Python interpreter
+PYTHON := $(shell if [ -f .venv/bin/python3 ]; then echo .venv/bin/python3; else echo python3; fi)
+
+# Common JSON files
+BASE_JSON = specialties/_common.json
+OTHERS_JSON = companies/*.json skills/_common.json
+
+# Build macro
+# $(1): role name
+# $(2): specialty JSON file
+# $(3): additional skills JSON files
+define build_resume
+	@echo "Building $(1) resume..."
+	@mkdir -p html
+	jq -s -f filters/merge.jq --arg role "$(1)" $(BASE_JSON) $(2) $(OTHERS_JSON) $(3) > html/resume.json
+	$(PYTHON) scripts/render_resume.py html/resume.json -o html/index.html --pdf html/resume.pdf
+	@echo "Done! Open html/index.html and html/resume.pdf"
+endef
+
 # Default target
-all: devops
+all: devsecops
 
 # Build for DevOps specialization
 devops:
-	@echo "Building DevOps resume..."
-	@mkdir -p html
-	jq -s -f filters/merge.jq --arg role "devops" specialties/_common.json specialties/devops.json companies/*.json skills/_common.json skills/devops.json > html/resume.json
-	python3 scripts/render_resume.py html/resume.json -o html/index.html
-	@echo "Done! Open html/index.html"
+	$(call build_resume,devops,specialties/devops.json,skills/devops.json)
 
 # Build for Site Reliability Engineer specialization
 sre:
-	@echo "Building SRE resume..."
-	@mkdir -p html
-	jq -s -f filters/merge.jq --arg role "sre" specialties/_common.json specialties/sre.json companies/*.json skills/_common.json skills/sre.json > html/resume.json
-	python3 scripts/render_resume.py html/resume.json -o html/index.html
-	@echo "Done! Open html/index.html"
+	$(call build_resume,sre,specialties/sre.json,skills/sre.json)
 
 # Build for DevSecOps specialization
 devsecops:
-	@echo "Building DevSecOps resume..."
-	@mkdir -p html
-	jq -s -f filters/merge.jq --arg role "devsecops" specialties/_common.json specialties/devsecops.json companies/*.json skills/_common.json skills/devops.json skills/devsecops.json > html/resume.json
-	python3 scripts/render_resume.py html/resume.json -o html/index.html
-	@echo "Done! Open html/index.html"
+	$(call build_resume,devsecops,specialties/devsecops.json,skills/devops.json skills/devsecops.json)
 
 # Clean build artifacts
 clean:

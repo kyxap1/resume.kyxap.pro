@@ -183,6 +183,7 @@
         .skills-section {
             margin-left: 35px;
             margin-bottom: 25px;
+            page-break-inside: avoid;
         }
 
         .skill-row {
@@ -205,6 +206,7 @@
             list-style-type: none;
             padding-left: 0;
             margin-bottom: 25px;
+            page-break-inside: avoid;
         }
 
         .cert-entry {
@@ -287,7 +289,7 @@
     <div class="job-entry">
         <div class="job-header">
             <span class="work-position-header">{{ job.position }}</span>
-            <span class="job-date">{{ job.startDate | format_date }} to {{ job.endDate | format_date if job.endDate else
+            <span class="job-date">{{ job.startDate | format_date }} - {{ job.endDate | format_date if job.endDate else
                 'present' }}</span>
         </div>
         <div class="work-company-sub">{{ job.company }}</div>

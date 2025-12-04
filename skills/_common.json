@@ -53,6 +53,30 @@
         "cursor",
         "antigravity"
       ]
+    },
+    {
+      "name": "Databases",
+      "level": "Master",
+      "keywords": [
+        "mysql",
+        "postgresql"
+      ]
+    },
+    {
+      "name": "Caching engines",
+      "level": "Master",
+      "keywords": [
+        "redis",
+        "memcached"
+      ]
+    },
+    {
+      "name": "Code Quality",
+      "level": "Master",
+      "keywords": [
+        "sonarcube"
+      ]
     }
+
   ]
 }

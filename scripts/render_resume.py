@@ -6,6 +6,10 @@ import urllib.request
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 from markupsafe import Markup
 import re
+try:
+    from weasyprint import HTML
+except ImportError:
+    HTML = None
 
 def load_json(path_or_url):
     """Load JSON from a local file or URL."""
@@ -74,15 +78,28 @@ def render_resume(json_path, output_path, template_dir='templates', template_nam
     else:
         print(html_output)
 
+    return html_output
+
 def main():
     parser = argparse.ArgumentParser(description='Render resume HTML from JSON.')
     parser.add_argument('json_file', help='Path or URL to the resume JSON file')
     parser.add_argument('-o', '--output', help='Output HTML file path', default='resume.html')
     parser.add_argument('--template-dir', help='Directory containing templates', default='templates')
+    parser.add_argument('--pdf', help='Output PDF file path')
 
     args = parser.parse_args()
 
-    render_resume(args.json_file, args.output, args.template_dir)
+    html_content = render_resume(args.json_file, args.output, args.template_dir)
+
+    if args.pdf:
+        if HTML:
+            print(f"Generating PDF to {args.pdf}...")
+            # Use base_url="." to resolve relative paths in CSS/images if any
+            HTML(string=html_content, base_url=".").write_pdf(args.pdf)
+            print(f"PDF generated at {args.pdf}")
+        else:
+            print("Error: weasyprint module not found. Please install it to generate PDF.", file=sys.stderr)
+            sys.exit(1)
 
 if __name__ == '__main__':
     main()

@@ -28,7 +28,8 @@
                 "terraform",
                 "consul",
                 "vault",
-                "packer"
+                "packer",
+                "helm"
             ]
         },
         {
@@ -37,8 +38,7 @@
             "keywords": [
                 "kubernetes",
                 "docker",
-                "containerd",
-                "helm"
+                "containerd"
             ]
         },
         {
