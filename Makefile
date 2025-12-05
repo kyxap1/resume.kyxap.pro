@@ -15,8 +15,8 @@ define build_resume
 	@echo "Building $(1) resume..."
 	@mkdir -p html
 	jq -s -f filters/merge.jq --arg role "$(1)" $(BASE_JSON) $(2) $(OTHERS_JSON) $(3) > html/resume.json
-	$(PYTHON) scripts/render_resume.py html/resume.json -o html/index.html --pdf html/resume.pdf
-	@echo "Done! Open html/index.html and html/resume.pdf"
+	$(PYTHON) scripts/render_resume.py html/resume.json -o html/index.html --pdf html/resume.pdf --rtf html/resume.rtf
+	@echo "Done! Open html/index.html, html/resume.pdf and html/resume.rtf"
 endef
 
 # Default target

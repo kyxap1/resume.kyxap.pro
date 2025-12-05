@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
-
 set -euo pipefail
 
-python3 -m venv .venv
+python3.12 -m venv .venv
 source .venv/bin/activate
-pip install -r requirements.txt
+pip3.12 install -r requirements.txt

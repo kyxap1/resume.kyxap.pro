@@ -2,6 +2,7 @@ import argparse
 import json
 import os
 import sys
+import subprocess
 import urllib.request
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 from markupsafe import Markup
@@ -20,11 +21,13 @@ def load_json(path_or_url):
         with open(path_or_url, 'r') as f:
             return json.load(f)
 
-def render_resume(json_path, output_path, template_dir='templates', template_name='resume.html'):
+def render_resume(json_path, output_path, template_dir='templates', template_name='resume.html', extra_context=None):
     """Render the resume HTML."""
     # Load data
     try:
         data = load_json(json_path)
+        if extra_context:
+            data.update(extra_context)
     except Exception as e:
         print(f"Error loading JSON: {e}", file=sys.stderr)
         sys.exit(1)
@@ -86,9 +89,11 @@ def main():
     parser.add_argument('-o', '--output', help='Output HTML file path', default='resume.html')
     parser.add_argument('--template-dir', help='Directory containing templates', default='templates')
     parser.add_argument('--pdf', help='Output PDF file path')
+    parser.add_argument('--rtf', help='Output RTF file path')
 
     args = parser.parse_args()
 
+    # Regular render for HTML and PDF
     html_content = render_resume(args.json_file, args.output, args.template_dir)
 
     if args.pdf:
@@ -99,6 +104,31 @@ def main():
             print(f"PDF generated at {args.pdf}")
         else:
             print("Error: weasyprint module not found. Please install it to generate PDF.", file=sys.stderr)
+            sys.exit(1)
+
+    if args.rtf:
+        print(f"Generating RTF to {args.rtf}...")
+        try:
+            # Generate temporary HTML specifically for RTF conversion with 'rtf' format context
+            # This allows the template to render differently (e.g. extra spacing) for RTF
+            rtf_html_path = args.output + '.rtf_temp.html'
+            render_resume(args.json_file, rtf_html_path, args.template_dir, extra_context={'format': 'rtf'})
+            
+            subprocess.run(
+                ['pandoc', rtf_html_path, '-o', args.rtf, '-s', '-V', 'title='],
+                check=True,
+                capture_output=True
+            )
+            # Cleanup temp file
+            if os.path.exists(rtf_html_path):
+                os.remove(rtf_html_path)
+                
+            print(f"RTF generated at {args.rtf}")
+        except subprocess.CalledProcessError as e:
+            print(f"Error generating RTF: {e.stderr.decode()}", file=sys.stderr)
+            sys.exit(1)
+        except FileNotFoundError:
+            print("Error: pandoc not found. Please install pandoc to generate RTF.", file=sys.stderr)
             sys.exit(1)
 
 if __name__ == '__main__':
