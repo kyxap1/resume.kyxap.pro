@@ -26,9 +26,6 @@
             "keywords": [
                 "ansible",
                 "terraform",
-                "consul",
-                "vault",
-                "packer",
                 "helm"
             ]
         },
@@ -49,8 +46,7 @@
                 "GuardDuty",
                 "SecurityHub",
                 "EC2",
-                "EC2 Image Builder",
-                "ACM",
+                "CloudFormation",
                 "Route53",
                 "S3",
                 "VPC"

@@ -239,6 +239,23 @@
     </style>
 </head>
 
+{% macro entry(title, subtitle, start_date, end_date) -%}
+<div class="job-entry">
+    <div class="job-header">
+        <span class="work-position-header">{{ title }}</span>
+        <span class="job-date">
+            {% if start_date %}
+            {{ start_date | format_date }} - {{ end_date | format_date if end_date else 'present' }}
+            {% else %}
+            {{ end_date | format_date if end_date }}
+            {% endif %}
+        </span>
+    </div>
+    <div class="work-company-sub">{{ subtitle }}</div>
+    {{ caller() }}
+</div>
+{%- endmacro %}
+
 <body>
     <header>
         {% if basics.picture and not basics.hide_picture %}
@@ -286,51 +303,44 @@
     <h2 class="section-title">Work</h2>
 
     {% for job in work %}
-    <div class="job-entry">
-        <div class="job-header">
-            <span class="work-position-header">{{ job.position }}</span>
-            <span class="job-date">{{ job.startDate | format_date }} - {{ job.endDate | format_date if job.endDate else
-                'present' }}</span>
-        </div>
-        <div class="work-company-sub">{{ job.company }}</div>
+    {% call entry(job.position, job.company, job.startDate, job.endDate) %}
+    <div class="job-metadata">
+        {% if job.business %}
+        <div><span class="meta-label">Business</span> {{ job.business }}</div>
+        {% endif %}
 
-        <div class="job-metadata">
-            {% if job.business %}
-            <div><span class="meta-label">Business</span> {{ job.business }}</div>
-            {% endif %}
+        {% if job.website %}
+        <div><span class="meta-label">Website</span> <a
+                href="{{ job.website if 'http' in job.website else 'https://' + job.website }}">{{ job.website
+                }}</a></div>
+        {% endif %}
 
-            {% if job.website %}
-            <div><span class="meta-label">Website</span> <a
-                    href="{{ job.website if 'http' in job.website else 'https://' + job.website }}">{{ job.website
-                    }}</a></div>
-            {% endif %}
-
-            {% if job.address %}
-            <div><span class="meta-label">Address</span> {{ job.address }}</div>
-            {% endif %}
-        </div>
-
-        <div class="job-description">
-            {{ job.summary | markdown_bold }}
-        </div>
-
-        {% if job.projects %}
-        {% for project in job.projects %}
-        <div class="project-name">{{ project.name }}</div>
-        <ul class="highlights">
-            {% for highlight in project.highlights %}
-            <li>{{ highlight | markdown_bold }}</li>
-            {% endfor %}
-        </ul>
-        {% endfor %}
-        {% elif job.highlights %}
-        <ul class="highlights">
-            {% for highlight in job.highlights %}
-            <li>{{ highlight | markdown_bold }}</li>
-            {% endfor %}
-        </ul>
+        {% if job.address %}
+        <div><span class="meta-label">Address</span> {{ job.address }}</div>
         {% endif %}
     </div>
+
+    <div class="job-description">
+        {{ job.summary | markdown_bold }}
+    </div>
+
+    {% if job.projects %}
+    {% for project in job.projects %}
+    <div class="project-name">{{ project.name }}</div>
+    <ul class="highlights">
+        {% for highlight in project.highlights %}
+        <li>{{ highlight | markdown_bold }}</li>
+        {% endfor %}
+    </ul>
+    {% endfor %}
+    {% elif job.highlights %}
+    <ul class="highlights">
+        {% for highlight in job.highlights %}
+        <li>{{ highlight | markdown_bold }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endcall %}
     {% endfor %}
 
     <h2 class="section-title">Skills</h2>
@@ -366,19 +376,8 @@
     {% if education %}
     <h2 class="section-title">Education</h2>
     {% for edu in education %}
-    <div class="job-entry">
-        <div class="job-header">
-            <span class="work-position-header">{{ edu.studyType }} in {{ edu.area }}</span>
-            <span class="job-date">
-                {% if edu.startDate %}
-                {{ edu.startDate | format_date }} – {{ edu.endDate | format_date if edu.endDate else 'present' }}
-                {% else %}
-                {{ edu.endDate | format_date if edu.endDate }}
-                {% endif %}
-            </span>
-        </div>
-        <div class="work-company-sub">{{ edu.institution }}</div>
-    </div>
+    {% call entry(edu.studyType ~ " in " ~ edu.area, edu.institution, edu.startDate, edu.endDate) %}
+    {% endcall %}
     {% endfor %}
     {% endif %}
 

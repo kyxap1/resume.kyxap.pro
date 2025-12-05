@@ -4,7 +4,6 @@
       "name": "Linux Distros",
       "level": "Master",
       "keywords": [
-        "Amazon Linux 2",
         "Amazon Linux 2023",
         "Debian",
         "Ubuntu"
@@ -35,13 +34,6 @@
         "jq",
         "sed",
         "awk"
-      ]
-    },
-    {
-      "name": "Version Control",
-      "level": "Master",
-      "keywords": [
-        "git"
       ]
     },
     {
