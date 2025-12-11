@@ -18,7 +18,8 @@
         "Implementing **Wazuh** and **Nessus Pro** for runtime **vulnerability scanning** of dynamic auto-scaling environments (**EKS/ECS**), ensuring proactive identification and mitigation of potential risks.",
         "Establishing **static code analysis** in GitHub and **dependency scanning** with **GitHub Dependabot** for continuous **security assessment** of code and dependencies across nearly 200 repositories.",
         "Orchestrating weekly continuous **penetration testing** using **GitHub Actions** to validate the resilience of the infrastructure and applications against cyber attacks.",
-        "Consulting Sparta Science on the preparation for a successful **SOC 2 Type 2 audit**, ensuring adherence to industry standards and regulatory requirements, earning auditor commendation for exemplary implementation."
+        "Consulting Sparta Science on the preparation for a successful **SOC 2 Type 2 audit**, ensuring adherence to industry standards and regulatory requirements, earning auditor commendation for exemplary implementation.",
+        "Built automated AWS infrastructure for **AI**/**LLM** workloads, including provisioning, containerized services, performance benchmarking, and deployment pipelines."
       ]
     }
   }
