@@ -18,6 +18,27 @@
       ]
     },
     {
+      "name": "Azure",
+      "level": "Master",
+      "keywords": [
+        "AKS",
+        "App Gateway",
+        "Application Gateway",
+        "Azure Monitor",
+        "Bicep",
+        "Container Apps",
+        "Cosmos DB",
+        "DevOps",
+        "DevOps Pipelines",
+        "Durable Functions",
+        "Event Grid",
+        "Front Door",
+        "Functions",
+        "Load Balancer",
+        "Service Bus"
+      ]
+    },
+    {
       "name": "OS and Linux Distros",
       "level": "Master",
       "keywords": [
