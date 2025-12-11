@@ -100,6 +100,16 @@
         "spark",
         "kafka"
       ]
+    },
+    {
+      "name": "LLM Infrastructure",
+      "level": "Master",
+      "keywords": [
+        "AWS Bedrock",
+        "AWS SageMaker",
+        "model benchmarking",
+        "vllm"
+      ]
     }
   ]
 }
