@@ -1,33 +1,92 @@
 {
   "skills": [
     {
-      "name": "Operating systems and distros",
+      "name": "AWS",
       "level": "Master",
       "keywords": [
-        "Red Hat Enterprise Linux RHEL",
-        "Amazon Linux 2",
-        "Amazon Linux 2023",
-        "Linux Debian/Ubuntu",
-        "FreeBSD",
-        "Solaris"
+        "Amazon Web Services",
+        "CloudFormation",
+        "EC2",
+        "ECS",
+        "EKS",
+        "GuardDuty",
+        "Route53",
+        "S3",
+        "SecurityHub",
+        "VPC",
+        "WAF"
       ]
     },
     {
-      "name": "Programming Languages",
+      "name": "Big Data",
       "level": "Master",
       "keywords": [
-        "perl",
-        "php",
-        "ruby",
-        "lua",
-        "golang"
+        "hadoop",
+        "kafka",
+        "spark"
       ]
     },
     {
-      "name": "Scripting",
+      "name": "Caching engines",
       "level": "Master",
       "keywords": [
-        "bash"
+        "memcached",
+        "redis"
+      ]
+    },
+    {
+      "name": "Code Quality",
+      "level": "Master",
+      "keywords": [
+        "sonarcube"
+      ]
+    },
+    {
+      "name": "Compliance & Standards",
+      "level": "Master",
+      "keywords": [
+        "CIS Benchmarks",
+        "DISA STIGs"
+      ]
+    },
+    {
+      "name": "Containers",
+      "level": "Master",
+      "keywords": [
+        "containerd",
+        "docker",
+        "kubernetes"
+      ]
+    },
+    {
+      "name": "Continuous Integration",
+      "level": "Master",
+      "keywords": [
+        "bitbucket",
+        "github actions",
+        "gitlab",
+        "jenkins"
+      ]
+    },
+    {
+      "name": "Databases",
+      "level": "Master",
+      "keywords": [
+        "cassandra",
+        "elasticsearch",
+        "mysql",
+        "postgresql"
+      ]
+    },
+    {
+      "name": "DevOps Patterns",
+      "level": "Master",
+      "keywords": [
+        "Continuous Deployment",
+        "Continuous Integration",
+        "Immutable Infrastructure",
+        "Infrastructure as Code",
+        "Infrastructure as a Service"
       ]
     },
     {
@@ -35,48 +94,7 @@
       "level": "Master",
       "keywords": [
         "neovim",
-        "sed",
-        "awk"
-      ]
-    },
-    {
-      "name": "Version Control",
-      "level": "Master",
-      "keywords": [
-        "git",
-        "svn"
-      ]
-    },
-    {
-      "name": "Software Development",
-      "level": "Master",
-      "keywords": [
-        "jira",
-        "bitbucket",
-        "github",
-        "slack",
-        "gitlab",
-        "mattermost"
-      ]
-    },
-    {
-      "name": "DevOps Patterns",
-      "level": "Master",
-      "keywords": [
-        "Immutable Infrastructure",
-        "Infrastructure as a Code",
-        "Infrastructure as a Service",
-        "Continuous Integration",
-        "Continuous Deployment"
-      ]
-    },
-    {
-      "name": "Continuous Integration",
-      "level": "Master",
-      "keywords": [
-        "gitlab",
-        "jenkins",
-        "github actions"
+        "vscode"
       ]
     },
     {
@@ -84,62 +102,21 @@
       "level": "Master",
       "keywords": [
         "ansible",
-        "terraform",
         "consul",
-        "vault",
+        "helm",
         "packer",
-        "helm"
+        "terraform",
+        "vault"
       ]
     },
     {
-      "name": "Containers",
+      "name": "Infrastructure Security",
       "level": "Master",
       "keywords": [
-        "kubernetes",
-        "docker",
-        "containerd"
-      ]
-    },
-    {
-      "name": "AWS",
-      "level": "Master",
-      "keywords": [
-        "amazon web services",
-        "guardduty",
-        "securityhub",
-        "ec2",
-        "ec2 image builder",
-        "acm",
-        "route53",
-        "s3",
-        "vpc"
-      ]
-    },
-    {
-      "name": "Load Balancers",
-      "level": "Master",
-      "keywords": [
-        "nginx",
-        "haproxy",
-        "traefik"
-      ]
-    },
-    {
-      "name": "Databases",
-      "level": "Master",
-      "keywords": [
-        "mysql",
-        "pgsql",
-        "cassandra",
-        "elasticsearch"
-      ]
-    },
-    {
-      "name": "Message Brokers",
-      "level": "Master",
-      "keywords": [
-        "Kafka",
-        "RabbitMQ"
+        "Data Encryption",
+        "Image Hardening",
+        "PKI",
+        "SELinux"
       ]
     },
     {
@@ -152,39 +129,58 @@
       ]
     },
     {
-      "name": "Application Monitoring",
+      "name": "Load Balancers",
       "level": "Master",
       "keywords": [
-        "prometheus"
+        "haproxy",
+        "nginx",
+        "traefik"
       ]
     },
     {
-      "name": "Virtualization",
+      "name": "Message Brokers",
       "level": "Master",
       "keywords": [
-        "xen",
-        "kvm",
-        "libvirt"
+        "kafka",
+        "rabbitmq"
       ]
     },
     {
       "name": "Monitoring",
       "level": "Master",
       "keywords": [
-        "kibana",
+        "elk",
         "grafana",
-        "zabbix",
-        "nagios",
+        "kibana",
+        "monit",
         "munin",
-        "monit"
+        "nagios",
+        "prometheus",
+        "zabbix"
       ]
     },
     {
-      "name": "Web Servers",
+      "name": "OS and Linux Distros",
       "level": "Master",
       "keywords": [
-        "nginx",
-        "apache"
+        "Amazon Linux 2",
+        "Amazon Linux 2023",
+        "Debian/Ubuntu",
+        "FreeBSD",
+        "Red Hat Enterprise Linux (RHEL)",
+        "Solaris"
+      ]
+    },
+    {
+      "name": "Programming Languages",
+      "level": "Master",
+      "keywords": [
+        "golang",
+        "lua",
+        "perl",
+        "php",
+        "python",
+        "ruby"
       ]
     },
     {
@@ -193,38 +189,83 @@
       "keywords": [
         "dns",
         "http",
-        "smtp",
-        "ssh",
         "ldap",
+        "smtp",
         "snmp",
+        "ssh",
         "xmpp"
       ]
     },
     {
-      "name": "Storage",
+      "name": "Scripting",
       "level": "Master",
       "keywords": [
-        "lvm",
-        "iscsi",
-        "drbd",
-        "zfs",
-        "hw controllers"
+        "bash",
+        "powershell"
       ]
     },
     {
       "name": "Security Operations",
       "level": "Master",
       "keywords": [
-        "CIS benchmarks",
-        "DISA STIGs",
-        "antivirus scanning",
-        "patch management",
-        "wazuh SIEM",
-        "incident response",
-        "data encryption at rest and in-transit",
-        "SELinux policies",
-        "image hardening",
-        "pki"
+        "Incident Response",
+        "Patch Management",
+        "SIEM (Wazuh)"
+      ]
+    },
+    {
+      "name": "Software Development",
+      "level": "Master",
+      "keywords": [
+        "antigravity",
+        "cursor",
+        "jira",
+        "kanban"
+      ]
+    },
+    {
+      "name": "Storage",
+      "level": "Master",
+      "keywords": [
+        "drbd",
+        "hw controllers",
+        "iscsi",
+        "lvm",
+        "zfs"
+      ]
+    },
+    {
+      "name": "Text Filtering",
+      "level": "Master",
+      "keywords": [
+        "awk",
+        "jq",
+        "sed"
+      ]
+    },
+    {
+      "name": "Version Control",
+      "level": "Master",
+      "keywords": [
+        "git",
+        "svn"
+      ]
+    },
+    {
+      "name": "Virtualization",
+      "level": "Master",
+      "keywords": [
+        "kvm",
+        "libvirt",
+        "xen"
+      ]
+    },
+    {
+      "name": "Web Servers",
+      "level": "Master",
+      "keywords": [
+        "apache",
+        "nginx"
       ]
     }
   ]

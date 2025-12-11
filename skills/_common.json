@@ -1,12 +1,28 @@
 {
   "skills": [
     {
-      "name": "Linux Distros",
+      "name": "AWS",
+      "level": "Master",
+      "keywords": [
+        "Amazon Web Services",
+        "ECS",
+        "EKS",
+        "GuardDuty",
+        "SecurityHub",
+        "EC2",
+        "CloudFormation",
+        "Route53",
+        "S3",
+        "VPC",
+        "WAF"
+      ]
+    },
+    {
+      "name": "OS and Linux Distros",
       "level": "Master",
       "keywords": [
         "Amazon Linux 2023",
-        "Debian",
-        "Ubuntu"
+        "Debian/Ubuntu"
       ]
     },
     {
@@ -30,7 +46,13 @@
       "level": "Master",
       "keywords": [
         "neovim",
-        "vscode",
+        "vscode"
+      ]
+    },
+    {
+      "name": "Text Filtering",
+      "level": "Master",
+      "keywords": [
         "jq",
         "sed",
         "awk"
@@ -41,7 +63,7 @@
       "level": "Master",
       "keywords": [
         "kanban",
-        "github",
+        "jira",
         "cursor",
         "antigravity"
       ]
@@ -50,8 +72,9 @@
       "name": "Databases",
       "level": "Master",
       "keywords": [
-        "mysql",
-        "postgresql"
+        "postgresql",
+        "cassandra",
+        "mysql"
       ]
     },
     {
@@ -68,7 +91,15 @@
       "keywords": [
         "sonarcube"
       ]
+    },
+    {
+      "name": "Big Data",
+      "level": "Master",
+      "keywords": [
+        "hadoop",
+        "spark",
+        "kafka"
+      ]
     }
-
   ]
 }

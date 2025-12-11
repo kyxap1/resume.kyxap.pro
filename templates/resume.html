@@ -2,384 +2,390 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ basics.name }} - {{ basics.label }}</title>
-    <link href="https://fonts.googleapis.com/css2?family=Carlito:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        @page {
-            size: letter;
-            margin: 0.5in;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ basics.name }} - {{ basics.label }}</title>
+  <link href="https://fonts.googleapis.com/css2?family=Carlito:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    @page {
+      size: letter;
+      margin: 0.5in;
+    }
 
-        body {
-            font-family: "Carlito", "Roboto", "Arial", sans-serif;
-            font-size: 11pt;
-            line-height: 1.3;
-            color: #000;
-            max-width: 8.5in;
-            margin: 0 auto;
-            padding: 0;
-        }
+    body {
+      font-family: "Carlito", "Roboto", "Arial", sans-serif;
+      font-size: 11pt;
+      line-height: 1.3;
+      color: #000;
+      max-width: 8.5in;
+      margin: 0 auto;
+      padding: 0;
+    }
 
-        p,
-        h1,
-        h2,
-        h3,
-        ul,
-        li {
-            margin: 0;
-            padding: 0;
-        }
+    @media screen {
+      body {
+        padding: 12px;
+        box-sizing: border-box;
+      }
+    }
 
-        p {
-            margin-bottom: 4px;
-        }
+    p,
+    h1,
+    h2,
+    h3,
+    ul,
+    li {
+      margin: 0;
+      padding: 0;
+    }
 
-        header {
-            overflow: hidden;
-        }
+    p {
+      margin-bottom: 4px;
+    }
 
-        .header-photo {
-            float: left;
-            margin-right: 25px;
-            margin-bottom: 5px;
-        }
+    header {
+      overflow: hidden;
+    }
 
-        .header-photo img {
-            width: 110px;
-            height: 110px;
-            object-fit: cover;
-        }
+    .header-photo {
+      float: left;
+      margin-right: 25px;
+      margin-bottom: 5px;
+    }
 
-        .name-line {
-            font-size: 22pt;
-            font-weight: bold;
-        }
+    .header-photo img {
+      width: 110px;
+      height: 110px;
+      object-fit: cover;
+    }
 
-        .title-line {
-            font-size: 12pt;
-            text-transform: uppercase;
-            font-weight: normal;
-            margin-bottom: 6px;
-        }
+    .name-line {
+      font-size: 22pt;
+      font-weight: bold;
+    }
 
-        .location-line {
-            font-size: 10pt;
-            text-transform: uppercase;
-            margin-top: 12px;
-        }
+    .title-line {
+      font-size: 12pt;
+      text-transform: uppercase;
+      font-weight: normal;
+      margin-bottom: 6px;
+    }
 
-        .contact-line {
-            font-size: 10pt;
-            margin-top: 2px;
-        }
+    .location-line {
+      font-size: 10pt;
+      text-transform: uppercase;
+      margin-top: 12px;
+    }
 
-        .contact-line a {
-            color: inherit;
-            text-decoration: none;
-        }
+    .contact-line {
+      font-size: 10pt;
+      margin-top: 2px;
+    }
 
-        .summary-block {
-            margin-top: 15px;
-            margin-left: 35px;
-            padding-left: 0;
-        }
+    .contact-line a {
+      color: inherit;
+      text-decoration: none;
+    }
 
-        h2.section-title {
-            font-size: 14pt;
-            font-weight: bold;
-            margin-bottom: 10px;
-            border-bottom: none;
-            margin-top: 15px;
-            text-transform: uppercase;
-        }
+    .summary-block {
+      margin-top: 15px;
+      margin-left: 35px;
+      padding-left: 0;
+    }
 
-        .job-entry {
-            margin-bottom: 40px;
-            page-break-inside: avoid;
-            margin-left: 35px;
-        }
+    h2.section-title {
+      font-size: 14pt;
+      font-weight: bold;
+      margin-bottom: 10px;
+      border-bottom: none;
+      margin-top: 15px;
+      text-transform: uppercase;
+    }
 
-        .job-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 2px;
-        }
+    .job-entry {
+      margin-bottom: 40px;
+      page-break-inside: avoid;
+      margin-left: 35px;
+    }
 
-        .company-name {
-            font-size: 12pt;
-            font-weight: bold;
-        }
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
 
-        .job-date {
-            font-size: 11pt;
-            text-align: right;
-            font-weight: normal;
-        }
+    .company-name {
+      font-size: 12pt;
+      font-weight: bold;
+    }
 
-        .job-title {
-            font-size: 11pt;
-            font-weight: normal;
-            text-transform: uppercase;
-            margin-bottom: 6px;
-            color: #222;
-        }
+    .job-date {
+      font-size: 11pt;
+      text-align: right;
+      font-weight: normal;
+    }
 
-        .work-position-header {
-            font-size: 12pt;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
+    .job-title {
+      font-size: 11pt;
+      font-weight: normal;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+      color: #222;
+    }
 
-        .work-company-sub {
-            font-size: 11pt;
-            font-weight: normal;
-            color: #222;
-            margin-bottom: 6px;
-        }
+    .work-position-header {
+      font-size: 12pt;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
 
-        .job-metadata {
-            margin-bottom: 8px;
-            font-size: 10.5pt;
-        }
+    .work-company-sub {
+      font-size: 11pt;
+      font-weight: normal;
+      color: #222;
+      margin-bottom: 6px;
+    }
 
-        .job-metadata div {
-            margin-bottom: 1px;
-        }
+    .job-metadata {
+      margin-bottom: 8px;
+      font-size: 10.5pt;
+    }
 
-        .meta-label {
-            font-weight: bold;
-            display: inline-block;
-        }
+    .job-metadata div {
+      margin-bottom: 1px;
+    }
 
-        .job-description {
-            margin-bottom: 8px;
-            text-align: left;
-        }
+    .meta-label {
+      font-weight: bold;
+      display: inline-block;
+    }
 
-        ul.highlights {
-            list-style-type: disc;
-            margin-left: 35px;
-            padding-left: 0;
-        }
+    .job-description {
+      margin-bottom: 8px;
+      text-align: left;
+    }
 
-        ul.highlights li {
-            margin-bottom: 3px;
-            padding-left: 5px;
-        }
+    ul.highlights {
+      list-style-type: disc;
+      margin-left: 35px;
+      padding-left: 0;
+    }
 
-        .project-name {
-            font-weight: bold;
-            margin-top: 10px;
-            margin-bottom: 5px;
-            font-size: 11pt;
-            margin-left: 14px;
-        }
+    ul.highlights li {
+      margin-bottom: 3px;
+      padding-left: 5px;
+    }
 
-        .skills-section {
-            margin-left: 35px;
-            margin-bottom: 25px;
-            page-break-inside: avoid;
-        }
+    .project-name {
+      font-weight: bold;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      font-size: 11pt;
+      margin-left: 14px;
+    }
 
-        .skill-row {
-            margin-bottom: 3px;
-            line-height: 1.4;
-        }
+    .skills-section {
+      margin-left: 35px;
+      margin-bottom: 25px;
+      page-break-inside: avoid;
+    }
 
-        .skill-name {
-            font-weight: bold;
-            font-size: 11pt;
-            margin-right: 4px;
-        }
+    .skill-row {
+      margin-bottom: 3px;
+      line-height: 1.4;
+    }
 
-        .skill-keywords {
-            font-size: 11pt;
-        }
+    .skill-name {
+      font-weight: bold;
+      font-size: 11pt;
+      margin-right: 4px;
+    }
 
-        .certificates-list {
-            margin-left: 35px;
-            list-style-type: none;
-            padding-left: 0;
-            margin-bottom: 25px;
-            page-break-inside: avoid;
-        }
+    .skill-keywords {
+      font-size: 11pt;
+    }
 
-        .cert-entry {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-        }
+    .certificates-list {
+      margin-left: 35px;
+      list-style-type: none;
+      padding-left: 0;
+      margin-bottom: 25px;
+      page-break-inside: avoid;
+    }
 
-        .certificates-list li {
-            margin-bottom: 5px;
-        }
+    .cert-entry {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
 
-        a {
-            color: #0563C1;
-            text-decoration: underline;
-        }
+    .certificates-list li {
+      margin-bottom: 5px;
+    }
 
-        a:hover {
-            text-decoration: underline;
-        }
+    a {
+      color: #0563C1;
+      text-decoration: underline;
+    }
 
-        .location-item+.location-item::before {
-            content: ", ";
-        }
+    a:hover {
+      text-decoration: underline;
+    }
 
-        .contact-item+.contact-item::before {
-            content: " | ";
-            margin: 0 2px;
-        }
-    </style>
+    .location-item+.location-item::before {
+      content: ", ";
+    }
+
+    .contact-item+.contact-item::before {
+      content: " | ";
+      margin: 0 2px;
+    }
+
+    @media screen and (max-width: 768px) {
+
+      .summary-block,
+      .job-entry,
+      .skills-section,
+      .certificates-list,
+      .project-name,
+      ul.highlights {
+        margin-left: 0;
+      }
+
+      ul.highlights {
+        padding-left: 20px;
+      }
+    }
+  </style>
 </head>
-
 {% macro entry(title, subtitle, start_date, end_date) -%}
 <div class="job-entry">
-    <div class="job-header">
-        <span class="work-position-header"><b>{{ title }}</b></span>
-        <span class="job-date">
-            {% if start_date %}
-            {{ start_date | format_date }} - {{ end_date | format_date if end_date else 'present' }}
-            {% else %}
-            {{ end_date | format_date if end_date }}
-            {% endif %}
-        </span>
-    </div>
-    <div class="work-company-sub">{{ subtitle }}</div>
-    {{ caller() }}
+  <div class="job-header">
+    <span class="work-position-header"><b>{{ title }}</b></span>
+    <span class="job-date">
+      {% if start_date %}
+        {{ start_date | format_date }} - {{ end_date | format_date if end_date else 'present' }}
+      {% else %}
+        {{ end_date | format_date if end_date }}
+      {% endif %}
+    </span>
+  </div>
+  <div class="work-company-sub">{{ subtitle }}</div>
+  {{ caller() }}
 </div>
 {%- endmacro %}
-
 <body>
-    <header>
-        {% if basics.picture and not basics.hide_picture %}
-        <div class="header-photo">
-            <img src="{{ basics.picture }}" alt="Profile Photo">
-        </div>
-        {% endif %}
-        <div class="header-text">
-            <div class="name-line">{{ basics.name }}</div>
-            <div class="title-line">{{ basics.label }}</div>
-            <div class="location-line">
-                {% if basics.location.address %}<span class="location-item">{{ basics.location.address }}</span>{% endif
-                %}
-                {% if basics.location.city %}<span class="location-item">{{ basics.location.city }}</span>{% endif %}
-                {% if basics.location.postalCode %}<span class="location-item">{{ basics.location.postalCode }}</span>{%
-                endif %}
-            </div>
-            <div class="contact-line">
-                {% if basics.phone %}<span class="contact-item">{{ basics.phone }}</span>{% endif %}
-                {% if basics.email %}<span class="contact-item"><a href="mailto:{{ basics.email }}">{{ basics.email
-                        }}</a></span>{% endif %}
-                {% if basics.website %}<span class="contact-item"><a href="{{ basics.website }}">{{ basics.website
-                        }}</a></span>{% endif %}
-                {% for profile in basics.profiles %}
-                {% if profile.url %}
-                <span class="contact-item">
-                    <a href="{{ profile.url }}">
-                        {% if profile.hide_name %}
-                        {{ profile.url }}
-                        {% else %}
-                        {{ profile.network }}
-                        {% endif %}
-                    </a>
-                </span>
-                {% endif %}
-                {% endfor %}
-            </div>
-            <h2 class="section-title"><b>Summary</b></h2>
-            <div class="summary-block">
-                <p>{{ basics.summary | markdown_bold }}</p>
-            </div>
-        </div>
-    </header>
-
-    <h2 class="section-title"><b>Work</b></h2>
-
-    {% for job in work %}
-    {% call entry(job.position, job.company, job.startDate, job.endDate) %}
-    <div class="job-metadata">
-        {% if job.business %}
-        <div><span class="meta-label">Business</span> {{ job.business }}</div>
-        {% endif %}
-
-        {% if job.website %}
-        <div><span class="meta-label">Website</span> <a
-                href="{{ job.website if 'http' in job.website else 'https://' + job.website }}">{{ job.website
-                }}</a></div>
-        {% endif %}
-
-        {% if job.address %}
-        <div><span class="meta-label">Address</span> {{ job.address }}</div>
-        {% endif %}
+  <header>
+    {% if basics.picture and not basics.hide_picture %}
+    <div class="header-photo">
+      <img src="{{ basics.picture }}" alt="Profile Photo">
     </div>
-
-    <div class="job-description">
-        {{ job.summary | markdown_bold }}
+    {% endif %}
+    <div class="header-text">
+      <div class="name-line">{{ basics.name }}</div>
+      <div class="title-line">{{ basics.label }}</div>
+      <div class="location-line">
+        {% if basics.location.address %}<span class="location-item">{{ basics.location.address }}</span>{% endif %}
+        {% if basics.location.city %}<span class="location-item">{{ basics.location.city }}</span>{% endif %}
+        {% if basics.location.postalCode %}<span class="location-item">{{ basics.location.postalCode }}</span>{% endif %}
+      </div>
+      <div class="contact-line">
+        {% if basics.phone %}<span class="contact-item">{{ basics.phone }}</span>{% endif %}
+        {% if basics.email %}<span class="contact-item"><a href="mailto:{{ basics.email }}">{{ basics.email }}</a></span>{% endif %}
+        {% if basics.website %}<span class="contact-item"><a href="{{ basics.website }}">{{ basics.website }}</a></span>{% endif %}
+        {% for profile in basics.profiles %}
+        {% if profile.url %}
+        <span class="contact-item">
+          <a href="{{ profile.url }}">
+            {% if profile.hide_name %}
+            {{ profile.url }}
+            {% else %}
+            {{ profile.network }}
+            {% endif %}
+          </a>
+        </span>
+        {% endif %}
+        {% endfor %}
+      </div>
+      <h2 class="section-title"><b>Summary</b></h2>
+      <div class="summary-block">
+        <p>{{ basics.summary | markdown_bold }}</p>
+      </div>
     </div>
-
-    {% if job.projects %}
-    {% for project in job.projects %}
-    <div class="project-name">{{ project.name }}</div>
-    <ul class="highlights">
-        {% for highlight in project.highlights %}
-        <li>{{ highlight | markdown_bold }}</li>
-        {% endfor %}
-    </ul>
-    {% endfor %}
-    {% elif job.highlights %}
-    <ul class="highlights">
-        {% for highlight in job.highlights %}
-        <li>{{ highlight | markdown_bold }}</li>
-        {% endfor %}
-    </ul>
+  </header>
+  <h2 class="section-title"><b>Work</b></h2>
+  {% for job in work %}
+  {% call entry(job.position, job.company, job.startDate, job.endDate) %}
+  <div class="job-metadata">
+    {% if job.business %}
+    <div><span class="meta-label">Business</span> {{ job.business }}</div>
     {% endif %}
-    {% endcall %}
+    {% if job.website %}
+    <div><span class="meta-label">Website</span> <a
+        href="{{ job.website if 'http' in job.website else 'https://' + job.website }}">{{ job.website
+        }}</a></div>
+    {% endif %}
+    {% if job.address %}
+    <div><span class="meta-label">Address</span> {{ job.address }}</div>
+    {% endif %}
+  </div>
+  <div class="job-description">
+    {{ job.summary | markdown_bold }}
+  </div>
+  {% if job.projects %}
+  {% for project in job.projects %}
+  <div class="project-name">{{ project.name }}</div>
+  <ul class="highlights">
+    {% for highlight in project.highlights %}
+    <li>{{ highlight | markdown_bold }}</li>
     {% endfor %}
-
-    <h2 class="section-title"><b>Skills</b></h2>
-    <div class="skills-section">
-        {% for skill in skills %}
-        <div class="skill-row">
-            <span class="skill-name"><b>{{ skill.name }}:</b></span>
-            <span class="skill-keywords">{{ skill.keywords | join(', ') | markdown_bold }}</span>
-        </div>
-        {% endfor %}
+  </ul>
+  {% endfor %}
+  {% elif job.highlights %}
+  <ul class="highlights">
+    {% for highlight in job.highlights %}
+    <li>{{ highlight | markdown_bold }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+  {% endcall %}
+  {% endfor %}
+  <h2 class="section-title"><b>Skills</b></h2>
+  <div class="skills-section">
+    {% for skill in skills %}
+    <div class="skill-row">
+      <span class="skill-name"><b>{{ skill.name }}:</b></span>
+      <span class="skill-keywords">{{ skill.keywords | join(', ') | markdown_bold }}</span>
     </div>
-
-    {% if certificates %}
-    {% if format == 'rtf' %}<p>&nbsp;</p>{% endif %}
-    <h2 class="section-title"><b>Certificates</b></h2>
-    <ul class="certificates-list">
-        {% for cert in certificates %}
-        <li>
-            <div class="cert-entry">
-                <span>
-                    {% if cert.url %}
-                    <a href="{{ cert.url }}">{{ cert.name }}</a>
-                    {% else %}
-                    {{ cert.name }}
-                    {% endif %}
-                </span>
-                <span>{{ cert.date | format_date }}</span>
-            </div>
-        </li>
-        {% endfor %}
-    </ul>
-    {% endif %}
-
-    {% if education %}
-    <h2 class="section-title"><b>Education</b></h2>
-    {% for edu in education %}
-    {% call entry(edu.studyType ~ " in " ~ edu.area, edu.institution, edu.startDate, edu.endDate) %}
-    {% endcall %}
     {% endfor %}
-    {% endif %}
-
+  </div>
+  {% if certificates %}
+  {% if format == 'rtf' %}<p>&nbsp;</p>{% endif %}
+  <h2 class="section-title"><b>Certificates</b></h2>
+  <ul class="certificates-list">
+    {% for cert in certificates %}
+    <li>
+      <div class="cert-entry">
+        <span>
+          {% if cert.url %}
+          <a href="{{ cert.url }}">{{ cert.name }}</a>
+          {% else %}
+          {{ cert.name }}
+          {% endif %}
+        </span>
+        <span>{{ cert.date | format_date }}</span>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+  {% if education %}
+  <h2 class="section-title"><b>Education</b></h2>
+  {% for edu in education %}
+  {% call entry(edu.studyType ~ " in " ~ edu.area, edu.institution, edu.startDate, edu.endDate) %}
+  {% endcall %}
+  {% endfor %}
+  {% endif %}
 </body>
-
 </html>

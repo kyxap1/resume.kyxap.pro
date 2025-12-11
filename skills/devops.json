@@ -1,56 +1,42 @@
 {
-    "skills": [
-        {
-            "name": "DevOps Patterns",
-            "level": "Master",
-            "keywords": [
-                "Immutable Infrastructure",
-                "Infrastructure as Code",
-                "Infrastructure as a Service",
-                "Continuous Integration",
-                "Continuous Deployment"
-            ]
-        },
-        {
-            "name": "Continuous Integration",
-            "level": "Master",
-            "keywords": [
-                "gitlab",
-                "jenkins",
-                "github actions"
-            ]
-        },
-        {
-            "name": "Infrastructure Automation",
-            "level": "Master",
-            "keywords": [
-                "ansible",
-                "terraform",
-                "helm"
-            ]
-        },
-        {
-            "name": "Containers",
-            "level": "Master",
-            "keywords": [
-                "kubernetes",
-                "docker",
-                "containerd"
-            ]
-        },
-        {
-            "name": "AWS",
-            "level": "Master",
-            "keywords": [
-                "Amazon Web Services",
-                "GuardDuty",
-                "SecurityHub",
-                "EC2",
-                "CloudFormation",
-                "Route53",
-                "S3",
-                "VPC"
-            ]
-        }
-    ]
+  "skills": [
+    {
+      "name": "DevOps Patterns",
+      "level": "Master",
+      "keywords": [
+        "Immutable Infrastructure",
+        "Infrastructure as Code",
+        "Infrastructure as a Service",
+        "Continuous Integration",
+        "Continuous Deployment"
+      ]
+    },
+    {
+      "name": "Continuous Integration",
+      "level": "Master",
+      "keywords": [
+        "gitlab",
+        "jenkins",
+        "github actions"
+      ]
+    },
+    {
+      "name": "Infrastructure Automation",
+      "level": "Master",
+      "keywords": [
+        "ansible",
+        "terraform",
+        "helm"
+      ]
+    },
+    {
+      "name": "Containers",
+      "level": "Master",
+      "keywords": [
+        "kubernetes",
+        "docker",
+        "containerd"
+      ]
+    }
+  ]
 }
