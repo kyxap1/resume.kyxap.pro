@@ -15,6 +15,9 @@
         "Transitioned infrastructure to **Infrastructure-as-Code (IaC)** using **Terraform** and **AWS CloudFormation**.",
         "Established traceable environments coupled with a reporting system for enhanced **monitoring** in **AWS**.",
         "Fostered knowledge sharing across a 50-person development team, promoting **AWS best practices**.",
+        "Worked with a hybrid infrastructure where part of the production environment was hosted in **Azure** and **GCP** to distribute frontend traffic across different points of presence (**load balancing**, **logs**).",
+        "Ran reverse proxies (haroxy) in Azure and GCP to mask frontend public IPs hosted in AWS.",
+        "Maintained applications using **Azure Functions** for road traffic and weather prediction.",
         "Introduced code review processes and **automated code quality analysis** using **AWS CodeStar** and other tools.",
         "Additionally, I contributed to the **architectural design** of a new ride-sharing platform intended to replace the existing one, leveraging **AWS services** for scalability and performance."
       ]
