@@ -19,7 +19,8 @@
         "Establishing **static code analysis** in GitHub and **dependency scanning** with **GitHub Dependabot** for continuous **security assessment** of code and dependencies across nearly 200 repositories.",
         "Orchestrating weekly continuous **penetration testing** using **GitHub Actions** to validate the resilience of the infrastructure and applications against cyber attacks.",
         "Consulting Sparta Science on the preparation for a successful **SOC 2 Type 2 audit**, ensuring adherence to industry standards and regulatory requirements, earning auditor commendation for exemplary implementation.",
-        "Built automated AWS infrastructure for **AI**/**LLM** workloads, including provisioning, containerized services, performance benchmarking, and deployment pipelines."
+        "Developing **GenAI** inference infrastructure on **Amazon ECS** using **vLLM**, performing **model benchmarking** to optimize latency and compute costs.",
+        "Provisioning secure **MLOps pipelines** via **Terraform** for **Amazon SageMaker** and **Bedrock**, enabling automated training and evaluation workflows in a regulated environment."
       ]
     }
   }
