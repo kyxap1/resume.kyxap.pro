@@ -28,7 +28,7 @@
         "Tailored custom **SELinux policies** for applications and **Docker** containers, configured SELinux for **ECS/EKS**, and created **hardened AMIs**.",
         "Configured **automated SBOM manifest generation** across clients GitHub repositories.",
         "Built an **automated system for patching vulnerabilities** in containers shipped with **Helm charts** for Sparta Science (now Oura Ring).",
-        "Developed a CLI tool (**bash/go**) for simultaneous access to isolated services like DB or Kibana across multiple environments using **AWS SSO** and **Session Manager**, **eliminating the need for VPNs**, uncompliant firewall rules or transit gateways.",
+        "Developed a CLI tool (**bash/go**) for simultaneous access to isolated services like DB or Kibana across multiple environments using **AWS SSO** and **Session Manager**, eliminating the need for VPNs, uncompliant firewall rules or transit gateways.",
         "Assisted companies in preparing for **FedRAMP audits**."
       ]
     }
