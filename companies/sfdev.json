@@ -13,16 +13,16 @@
         {
           "name": "Adobe, Inc.",
           "highlights": [
-            "Participated in the development of Adobe Creative Cloud, Adobe Marketing Cloud, and Adobe Document Cloud services, which runs on **Amazon AWS**.",
-            "Designed, prototyped, and implemented key platform components, such as live data **encryption** system, **backup and restore** system for clustered environments, sophisticated space management system, and multiregional data migration system, supporting hundreds of thousands of active users and petabytes of data.",
+            "Participated in the development of Adobe Creative Cloud, Adobe Marketing Cloud, and Adobe Document Cloud services, which run on **Amazon AWS**.",
+            "Designed, prototyped, and implemented key platform components, such as a live data **encryption** system, a **backup and restore** system for clustered environments, a sophisticated space management system, and a multi-regional data migration system, supporting hundreds of thousands of active users and petabytes of data.",
             "Employed tools and technologies such as **chef**, **bash**, **mysql**, perl, ruby, java, lvm, dm-crypt, **AWS**, and **RHEL**."
           ]
         },
         {
           "name": "Joyent",
           "highlights": [
-            "Participated in the development of Joyent SmartDataCenter platform.",
-            "Developed **Docker** support integration, **Windows** images build system, and **Linux** images build system.",
+            "Participated in the development of the **Joyent** (primary **Node.js** maintainer) SmartDataCenter platform.",
+            "Developed a **Docker** support integration, a **Windows** images build system, and a **Linux** images build system.",
             "Utilized technologies such as pxe, windows aik, nodejs, mongodb, **docker**, **linux**, smartos and solaris."
           ]
         },

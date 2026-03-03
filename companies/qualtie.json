@@ -8,7 +8,7 @@
       "position": "SENIOR DEVSECOPS ENGINEER",
       "business": "Cybersecurity, DevSecOps Consulting",
       "address": "Doylestown, PA",
-      "summary": "As Senior Engineer of **DevSecOps** at Qualtie, I helped our customer, Sparta Science, to implement robust **information security** practices in the cloud, and prepare **CI/CD**, build and deploy **pipelines** for their Federal environment on Palantir FedStart. My key responsibilities and accomplishments include:",
+      "summary": "As Senior Engineer of **DevSecOps** at Qualtie, I helped our customer, Sparta Science, to implement robust **information security** practices in the cloud, and prepare CI/CD, build, and deploy pipelines for their Federal environment on Palantir FedStart. My key responsibilities and accomplishments include:",
       "highlights": [
         "Developing 20+ **helm charts** with bundled services and build/deploy **pipelines** for the deployment to federal environment (Palantir Apollo).",
         "Implementing **hardening** of **container images** and DoD-approved security configuration on **helm charts**, as well as **vulnerability patching** pipelines for Federal environment, achieving **100% compliance** with DoD standards and **reducing critical vulnerabilities to zero** on an automated basis.",
